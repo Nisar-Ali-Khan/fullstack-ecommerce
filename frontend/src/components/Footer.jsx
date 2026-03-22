@@ -48,4 +48,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; // <--- YE LINE HONA LAAZMI HAI
+export default Footer; 

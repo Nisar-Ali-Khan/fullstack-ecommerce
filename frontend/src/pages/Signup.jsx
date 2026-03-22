@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Auth.css'; // Dono Login/Signup ke liye ek hi CSS
+import './Auth.css'; 
 
 const Signup = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });

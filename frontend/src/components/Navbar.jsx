@@ -14,7 +14,7 @@ const Navbar = () => {
     if (searchTerm.trim()) {
       navigate(`/products?search=${searchTerm}`);
     } else {
-      navigate('/products'); // Agar empty search ho toh all products par le jaye
+      navigate('/products'); 
     }
   };
 

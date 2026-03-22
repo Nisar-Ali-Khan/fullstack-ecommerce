@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Components
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // <--- Check karein ye import sahi hai
+import Footer from './components/Footer'; 
 
 // Pages
 import Home from './pages/Home';
@@ -34,7 +34,6 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer: Routes ke BAHAR taake har page par dikhe */}
         <Footer /> 
       </div>
     </Router>
