@@ -1,0 +1,89 @@
+/* Footer.css */
+.footer-wrapper {
+  background: white;
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid #E3E8EE;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: #EFF2F4;
+  padding: 40px 20px;
+  text-align: center;
+}
+.newsletter-section h3 { font-size: 20px; margin-bottom: 5px; color: #1C1C1C; }
+.newsletter-section p { color: #606060; margin-bottom: 20px; }
+.news-input-box { display: flex; justify-content: center; gap: 10px; }
+.input-with-icon { 
+  background: white; border: 1px solid #E3E8EE; border-radius: 6px; 
+  display: flex; align-items: center; padding: 0 10px; width: 300px;
+}
+.input-with-icon input { border: none; padding: 10px; outline: none; width: 100%; }
+.subscribe-btn { background: #0D6EFD; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
+/* Main Footer Content */
+.footer-main {
+  padding: 40px 0;
+  background: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex; /* Makes Brand and Links-Grid side-by-side */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  width: 250px;
+}
+.f-logo { color: #1C1C1C; margin-bottom: 15px; font-size: 24px; }
+.f-socials { 
+  display: flex; /* Makes icons horizontal */
+  gap: 10px; 
+  margin-top: 20px; 
+}
+.f-socials span { 
+  width: 32px; height: 32px; background: #BDC4CD; color: white; 
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+  cursor: pointer; font-size: 14px;
+}
+
+/* Links Grid Fix */
+.f-links-grid {
+  display: flex; /* Makes columns side-by-side */
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.f-col h4 { 
+  font-size: 16px; 
+  color: #1C1C1C; 
+  margin-bottom: 15px; 
+  font-weight: bold;
+}
+.f-col p { 
+  color: #8B96A5; 
+  font-size: 14px; 
+  margin-bottom: 10px; 
+  cursor: pointer; 
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  background: #EFF2F4;
+  padding: 20px 0;
+  border-top: 1px solid #E3E8EE;
+}
+
+.bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #606060;
+  font-size: 14px;
+}

@@ -1,0 +1,32 @@
+// backend/routes/productRoutes.js
+const express = require('express');
+const router = express.Router();
+const Product = require('../models/Product');
+
+// Route: GET /api/products
+// Description: Fetch all products from the database
+router.get('/', async (req, res) => {
+  try {
+    const products = await Product.find({});
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error: Unable to fetch products' });
+  }
+});
+
+// Route: GET /api/products/:id
+// Description: Fetch a single product by its ID
+router.get('/:id', async (req, res) => {
+  try {
+    const product = await Product.findById(req.params.id);
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(404).json({ message: 'Product not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+module.exports = router;
